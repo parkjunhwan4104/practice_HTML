@@ -1,0 +1,60 @@
+section > div {
+  position: absolute;
+  
+  width: 33.3333%;
+  height: 33.3333%;
+}
+
+section>div:nth-child(1){
+  top:0;
+  left:0;
+  background-color:blue;
+}
+
+section>div:nth-child(2){
+  top:0;
+  left:33.3333%;
+  background-color:green;
+}
+
+section>div:nth-child(3){
+  top:0;
+  left:66.6667%;
+  background-color:black;
+}
+
+section>div:nth-child(4){
+  top:33.3333%;
+  left:0;
+  background-color:white;
+}
+
+section>div:nth-child(5){
+  top:33.3333%;
+  left:33.3333%;
+  background-color:gray;
+}
+
+section>div:nth-child(6){
+  top:33.3333%;
+  left:66.6667%;
+  background-color:yellow;
+}
+
+section>div:nth-child(7){
+  top:66.6667%;
+  left:0;
+  background-color:red;
+}
+
+section>div:nth-child(8){
+  top:66.6667%;
+  left:33.3333%;
+  background-color:orange;
+}
+
+section>div:nth-child(9){
+  top:66.6667%;
+  left:66.6667%;
+  background-color:red;
+}
