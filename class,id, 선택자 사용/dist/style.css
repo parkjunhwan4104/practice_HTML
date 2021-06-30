@@ -1,0 +1,26 @@
+section>nav{
+  height:100px;
+  width:30%;
+  background-color:gold;
+  display:inline-block;
+  
+}
+
+section>div{
+  height:100px;
+  width:30%;
+  background-color:gold;
+  display:inline-block;
+}
+
+section{
+  text-align:center;
+}
+
+.a.b {
+  background-color:pink;
+  
+}
+#k{
+ background-color:green;
+}
