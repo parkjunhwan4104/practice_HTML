@@ -1,0 +1,36 @@
+a{
+  text-decoration:none;
+  color:inherit;
+  
+}
+
+nav{
+  
+  text-align:center;
+  
+}
+
+nav>div{
+  display:inline-block;
+  background-color:#afafaf;
+  padding-right:20px;
+  padding-left:20px;
+  border-radius:7px;
+}
+
+nav>div>section{
+  display:inline-block;
+  
+  
+}
+
+nav>div>section>a{
+  display:block;
+  font-size:20px;
+  padding:15px;
+}
+
+nav>div>section:hover>a{
+  background-color:black;
+  color:white;
+}
