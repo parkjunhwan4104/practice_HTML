@@ -1,0 +1,14 @@
+body{
+  
+  text-align:center;
+}
+div{
+  margin-bottom:25px;
+  
+}
+
+body > img:nth-child(3){
+  
+  margin-left:18px;
+  margin-right:18px;
+}
