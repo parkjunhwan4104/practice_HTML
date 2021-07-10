@@ -1,0 +1,76 @@
+body,li,ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+  
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.menu_1{
+  text-align:center;
+  
+}
+.menu_1 ul{
+  background-color:#dfdfdf;
+  display:inline-block;
+}
+
+.menu_1>ul{
+  
+  padding:0 15px;
+  border-radius:8px;
+  
+}
+
+
+.menu_1 ul>li {
+  position:relative;
+}
+
+.menu_1>ul>li{
+  
+  display:inline-block;
+  
+}
+
+.menu_1 ul>li>a{
+  padding:15px;
+  display:block;
+}
+
+.menu_1 ul>li:hover>a{
+  background-color:black;
+  color:white;
+}
+
+.menu_1 ul>li:hover>ul{
+  display:block;
+}
+  
+
+/* position을 absolute로 설정하면 추가로 position을 설정해주어야함 */
+.menu_1> ul ul{
+  display:none;
+   position:absolute;
+  top:100%;
+  left:0;
+}  
+.menu_1> ul ul ul{
+
+  top:0;
+  left:100%;
+  white-space:nowrap;
+
+} 
+
+.menu_1>ul>li:first-child>ul ul{
+  
+  left:auto;
+  right:100%;
+
+
+}
