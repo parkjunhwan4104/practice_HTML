@@ -1,0 +1,15 @@
+div{
+  height:100px;
+  background-color:gold;
+  transition:background-color 3s,width 3s;
+  
+  /* width를 auto로 할시 너비에 대한 트렌지션을 제대로 이용이 안됨(정해주여야함)*/
+  width:100%;
+}
+
+div:hover{
+  width:50%;
+  background-color:red;
+  
+
+}
