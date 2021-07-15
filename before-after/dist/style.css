@@ -1,0 +1,13 @@
+ul>li{
+  border:1px solid red;
+}
+
+ul>li::after{
+  content:"님";
+  color:blue;
+  
+}
+
+ul>li::before{
+  content:"조선 ";
+}
