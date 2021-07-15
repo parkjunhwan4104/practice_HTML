@@ -1,0 +1,101 @@
+body,ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+
+.side_bar{
+  position:absolute;
+  top:0;
+  left:-270px;
+  width:300px;
+  height:100%;
+  transition:left .3s,background-color .3s;
+  background-color:#dfdfdf;
+}
+
+.side_bar:hover{
+  left:0;
+  
+  color:white;
+ }
+
+.side_bar:hover, .side_bar>.menu>ul ul{
+  background-color:black;
+}
+
+.side_bar>.status_icon>div{
+  
+ 
+  text-align:right;
+  padding:5px;
+ 
+}
+
+.side_bar>.status_icon>div:last-child{
+  
+ 
+  display:none;
+}
+
+.side_bar:hover>.status_icon>div:last-child{
+  display:block; 
+}
+
+.side_bar:hover>.status_icon>div:first-child{
+  display:none; 
+}
+
+.side_bar > .menu  ul > li > a {
+    display: block;
+    font-weight: bold;
+    padding:10px;
+    white-space:nowrap;
+  
+    
+}
+
+.side_bar>.menu ul>li{
+  
+  position:relative;
+}
+
+.side_bar>.menu ul>li:hover>a{
+  
+  background-color:white;
+  color:black;
+  
+  
+}
+
+
+
+/* only-child는 형제가 없는 애들을 지칭
+ not(:only-child)는 형제가 있는 애들 지칭
+*/
+
+
+.side_bar > .menu  ul > li > a:not(:only-child)::after{
+    content:"[+]";
+}
+.side_bar > .menu  ul > li:hover > a:not(:only-child)::after{
+    content:"[-]";
+}
+
+.side_bar>.menu>ul ul{
+  display:none;
+  
+  position:absolute;
+  left: 100%;
+  top: 0;
+  width: 200px;
+}
+
+.side_bar>.menu ul >li:hover>ul{
+ display: block;
+}
