@@ -1,0 +1,59 @@
+/*block 요소만 float요소를 무시한다.  
+  clear:both는 float 계에서 줄바꿈(enter ) 역할을 한다
+*/
+/*4개의 블럭을 가로로 1줄 세우기 위해 inline-block을 이용했지만 좋지않음   */
+
+body{
+  margin:0;
+}
+
+section{
+  border:10px solid gold;
+  
+}
+
+/*article 자체는 float요소를 무시하므로 핑크색 영역이 section의 자식들을 무시해 저 위 까지 영역 차지하지만 article안에 있는 글자들은 인라인 블럭이라 div를 무시하지 못함  */
+article{
+  background-color:pink;
+}
+
+
+/* 퍼센트와 같은 정교한 것은 inline-block과 어울리지 않음(인라인 블럭은 항상 애매한 여백이 존재함) ==>block이 필요 */
+
+/* float은 올라갈수 있으면 올라가는 것(너비를 최소화하면서)
+float:rigth로 설정하면 html에서 가장 먼저 마주치는 <div>1</div>이 가장 오른쪽으로 먼저 감
+그러나 float을 사용하면 sectoin의 높이가 0이되어버림
+
+*/
+
+section>div{
+  height:100px;
+  background-color:red;
+  width:25%; 
+  display:block;
+  float:left;
+  
+}
+
+section>div:nth-child(2n){
+  background-color:green;
+}
+
+
+/* span을 통해 div의 영역을 늘리기 위해서 span을 block으로 바꾸어 span을 줄바꿈하여 공간을 늘림 하지만 block요소여서 float을 무시하므로 clear:both를 통해 원하는 것을 이루도록함 
+
+section>span{
+  
+  display:block;
+  clear:both;
+  
+}
+*/
+
+/*span을 html에서 따로 추가하지않고 div만 표현하고 section에 ""을 추가하고 이에 span처럼 display:block;
+  clear:both 을 추가하여 부작용을 막음 */
+section::after{
+  content:"";
+  display:block;
+  clear:both;
+}
