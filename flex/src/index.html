@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<!-- div에 flex를 주는 이유는 nav와 section을 가로로 한줄에 표현하기 위한 것이고 ul에 flex를 주는 이유는 4개의 아이템들을 가로로 한줄로 표현하기 위함임 -->
+
+<!--부모에 flex를 두면 자식까지 이 영향을 받지만 자식의 자식은 영향을 받지 않음 -->
+
+<div class="top_bar flex flex-jc-sa border-red ">
+    <a href="#" class="logo flex align-items-c">
+        <i class="fab fa-apple"></i>        
+    </a>
+    <nav class="menu_box ">
+        <ul class="flex border-green height-100">
+          
+            <!--a는 원래 inline-block이므로 height-100을 해도 영역이 100프로가 되지 않는다. 따라서 a에 flex를 취해주면 a가 block의 특성을 띠게되고 영역이 100프로가 된다. -->
+            <li><a class="flex border-gold align-items-c height-100" href="#">Home</a></li>
+            <li><a class="flex border-gold align-items-c height-100" href="#">About</a></li>
+            <li><a class="flex border-gold align-items-c height-100" href="#">Products</a></li>
+            <li><a class="flex border-gold align-items-c height-100" href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+</div>
